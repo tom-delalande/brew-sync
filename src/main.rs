@@ -43,15 +43,15 @@ fn main() {
 fn sync_formulae(to_install: Vec<String>, to_delete: Vec<String>) {
     Command::new("brew").arg("install").args(to_install.clone()).output().expect("Error installing formulae");
     Command::new("brew").arg("uninstall").args(to_delete.clone()).output().expect("Error uninstalling formulae");
-    println!("Installing formulae: {:?}", to_install);
-    println!("Deleting formulae: {:?}", to_delete);
+    println!("Installed formulae: {:?}", to_install);
+    println!("Deleted formulae: {:?}", to_delete);
 }
 
 fn sync_casks(to_install: Vec<String>, to_delete: Vec<String>) {
     Command::new("brew").arg("cask").arg("install").args(to_install.clone()).output().expect("Error installing casks");
     Command::new("brew").arg("cask").arg("uninstall").args(to_delete.clone()).output().expect("Error installing casks");
-    println!("Installing casks: {:?}", to_install);
-    println!("Deleting casks: {:?}", to_delete);
+    println!("Installed casks: {:?}", to_install);
+    println!("Deletede casks: {:?}", to_delete);
 }
 
 struct SyncResult {
