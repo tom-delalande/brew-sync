@@ -1,0 +1,35 @@
+[formulae]
+autoconf = {}
+cmake = {}
+fish = {}
+fzf = {}
+gh = {}
+git = {}
+gradle = {}
+kotlin-language-server = {}
+lua = {}
+lua-language-server = {}
+luarocks = {}
+neovim = {'HEAD'}
+ninja = {}
+node = {}
+'openjdk@11' = {}
+ripgrep = {}
+rust-analyzer = {}
+rustup = {}
+terraform = {}
+tmux = {}
+wget = {}
+zk = {}
+
+[casks]
+aldente = {}
+discord = {}
+firefox = {}
+google-chrome = {}
+iterm2 = {}
+maccy = {}
+obsidian = {}
+reaper = {}
+rectangle = {}
+spotify = {}
